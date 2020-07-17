@@ -27,10 +27,15 @@ pip install tqdm
 Quickstart (Demo)
 
 if you want to test out model,put the image in ./test file and run
+
 cd src
+
 python main.py --data_test Demo --pre_train ../experiment/AIM2020/model_best.pt --test_only --save_results --save AIM2020
+
 and you can see the results in experiment/AIM2020/results_Demo 
 
 if you want to test our model time and parameters,open the MSRResnet,please put the image in the DIV2K file and run :
+
 cd MSRResnet
+
 python test_demo.py
