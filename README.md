@@ -9,12 +9,19 @@ NVIDIA GPU + CUDA10.1
 
 Getting Started
 Installation
+
 pip install PyTorch>=1.1.0 and dependencies from http://pytorch.org
+
 pip install Torchvision>=0.3.0 from the source.
+
 pip install numpy
+
 pip install skimage
+
 pip install imageio
+
 pip install matplotlib
+
 pip install tqdm
 
 Quickstart (Demo)
