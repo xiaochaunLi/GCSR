@@ -1,10 +1,12 @@
 # GCSR
 AIM2020 efficent SR challenge
+
 The code is based on the PyTorch implementation of the EDSR(https://github.com/thstkdgus35/EDSR-PyTorch)
 Prerequisites
 Linux or macOS
 Python 3.6
 NVIDIA GPU + CUDA10.1
+
 Getting Started
 Installation
 pip install PyTorch>=1.1.0 and dependencies from http://pytorch.org
