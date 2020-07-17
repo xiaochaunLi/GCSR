@@ -1,0 +1,272 @@
+GCSR(
+  (sub_mean): MeanShift(3, 3, kernel_size=(1, 1), stride=(1, 1))
+  (light1): Biasic(
+    (c1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (c2): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c22): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c3): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c33): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c66): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c6): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c7): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c77): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c4): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (relu): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (light2): Biasic(
+    (c1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (c2): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c22): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c3): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c33): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c66): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c6): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c7): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c77): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c4): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (relu): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (light3): Biasic(
+    (c1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (c2): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c22): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c3): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c33): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c66): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c6): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c7): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c77): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c4): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (relu): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (light4): Biasic(
+    (c1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (c2): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c22): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c3): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c33): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c66): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c6): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c7): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c77): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c4): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (relu): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (light5): Biasic(
+    (c1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (c2): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c22): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c3): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c33): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c66): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c6): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c7): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c77): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c4): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (relu): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (light6): Biasic(
+    (c1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (c2): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c22): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c3): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c33): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c66): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c6): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c7): Conv2d(32, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (c77): GhostModule(
+      (primary_conv): Sequential(
+        (0): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      )
+      (cheap_operation): Sequential(
+        (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+      )
+    )
+    (c4): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (relu): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (GEF): Sequential(
+    (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): LeakyReLU(negative_slope=0.05, inplace)
+  )
+  (add_mean): MeanShift(3, 3, kernel_size=(1, 1), stride=(1, 1))
+  (head): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+  (tail1): Upsample(scale_factor=4.0, mode=bicubic)
+  (LR_conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (tail): Sequential(
+    (0): Conv2d(64, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): PixelShuffle(upscale_factor=4)
+  )
+)
+
+Evaluation:
+[Demo x4]	PSNR: 0.000 (Best: 0.000 @epoch 1)
+Forward: 8.32s
+
+Saving...
+Averagetime is :0.048229 seconds
+Total: 65.38s
+
